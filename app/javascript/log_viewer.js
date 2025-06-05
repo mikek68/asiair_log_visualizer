@@ -44,8 +44,8 @@ window.logMessagesButtonClick = function(element) {
               <h5 class="modal-title" id="logMessagesModalLabel">${className} Logs (ID: ${id})</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-              <table class="table">
+            <div class="modal-body log-modal-content">
+              <table class="table table-striped table-sm log-modal-table">
                 <thead>
                   <tr>
                     <th scope="col">Log Time</th>

@@ -1,0 +1,14 @@
+.log-modal-content {
+  font-size: 0.875rem;
+}
+
+.log-modal-table thead {
+  background-color: #000;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* Styles for .log-modal-table tbody can be added here if needed in the future */
+/* For now, we rely on Bootstrap's modal-dialog-scrollable and table-striped */
