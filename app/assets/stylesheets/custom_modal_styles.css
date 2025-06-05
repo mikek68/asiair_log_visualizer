@@ -3,11 +3,18 @@
 }
 
 .log-modal-table thead {
-  background-color: #000;
-  color: #fff;
+  /* Ensure the thead itself is sticky */
   position: sticky;
-  top: 0;
-  z-index: 1;
+  top: 0; /* Stick to the top of the scrollable container (.modal-body) */
+  z-index: 1; /* Stay above scrolling content */
+  color: #fff; /* Set text color for header, can be overridden by th if needed */
+}
+
+.log-modal-table thead th {
+  background-color: #000; /* Opaque background for each header cell */
+  color: #fff; /* White text for header cells */
+  font-size: 1rem; /* Larger font size for header cells */
+  /* position: sticky; top: 0; z-index: 1; */ /* Redundant if thead is already sticky and th fills thead */
 }
 
 /* Styles for .log-modal-table tbody can be added here if needed in the future */
