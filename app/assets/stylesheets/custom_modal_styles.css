@@ -1,26 +1,28 @@
 .log-modal-content {
   font-size: 0.875rem;
-  padding: 0; /* Remove padding to prevent gap above table */
+  padding: 0 !important; /* Remove padding to prevent gap above table */
 }
 
 .log-modal-table {
-  margin-top: 0; /* Remove top margin from table */
-  margin-bottom: 0; /* Also remove bottom margin for consistency */
+  margin: 0 !important; /* Remove all margins from table */
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 .log-modal-table thead {
-  /* Ensure the thead itself is sticky */
-  position: sticky;
-  top: 0; /* Stick to the top of the scrollable container (.modal-body) */
-  z-index: 1; /* Stay above scrolling content */
-  color: #fff; /* Set text color for header, can be overridden by th if needed */
+  /* This rule might become redundant or simplified if th handles all sticky properties */
+  /* For now, keeping it for structural clarity, but ensure th overrides if needed */
+  color: #fff; /* Default text color for header, th will override */
 }
 
 .log-modal-table thead th {
   background-color: #000; /* Opaque background for each header cell */
   color: #fff; /* White text for header cells */
   font-size: 1rem; /* Larger font size for header cells */
-  /* position: sticky; top: 0; z-index: 1; */ /* Redundant if thead is already sticky and th fills thead */
+  position: sticky; /* Ensure sticky positioning is on the cell */
+  top: 0; /* Stick to the top of the scrollable container */
+  z-index: 10; /* Higher z-index to ensure it's above other content */
 }
 
 /* Styles for .log-modal-table tbody can be added here if needed in the future */
