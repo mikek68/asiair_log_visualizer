@@ -11,10 +11,4 @@
 
 <script>
     gantt.load("<%= log_data_path(@log_file.id, @log.id) %>");
-
-    function logMessagesButtonClick(element) {
-        console.log("clicked");
-        console.log(element.dataset.class);
-        console.log(element.dataset.id);
-    };
 </script>

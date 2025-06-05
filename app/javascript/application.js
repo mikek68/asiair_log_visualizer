@@ -3,6 +3,7 @@ import "@hotwired/turbo-rails"
 import "./controllers"
 import * as bootstrap from "bootstrap"
 import "./packs/gantt_chart"
+import "./log_viewer"
 
 // $(".nav-link").on("click", function(){
 //     console.log("clicked");
