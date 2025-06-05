@@ -1,3 +1,5 @@
+import { Modal } from 'bootstrap';
+
 window.logMessagesButtonClick = function(element) {
   const className = element.dataset.class;
   const id = element.dataset.id;
@@ -6,9 +8,9 @@ window.logMessagesButtonClick = function(element) {
   // Remove any existing modal
   const existingModal = document.getElementById('logMessagesModal');
   if (existingModal) {
-    const modal = bootstrap.Modal.getInstance(existingModal);
-    if (modal) {
-      modal.hide();
+    const modalInstance = Modal.getInstance(existingModal);
+    if (modalInstance) {
+      modalInstance.hide();
     }
     existingModal.remove();
   }
@@ -69,7 +71,7 @@ window.logMessagesButtonClick = function(element) {
 
       document.body.appendChild(modalElement);
 
-      const modal = new bootstrap.Modal(modalElement);
+      const modal = new Modal(modalElement);
       modal.show();
     })
     .catch(error => {
