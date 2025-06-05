@@ -1,5 +1,11 @@
 .log-modal-content {
   font-size: 0.875rem;
+  padding: 0; /* Remove padding to prevent gap above table */
+}
+
+.log-modal-table {
+  margin-top: 0; /* Remove top margin from table */
+  margin-bottom: 0; /* Also remove bottom margin for consistency */
 }
 
 .log-modal-table thead {
