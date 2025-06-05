@@ -1,0 +1,67 @@
+<div class="container text-center">
+  <h1>Log File Management</h1>
+  <br>
+  <div class="row">
+    <div class="col-sm-12">
+      <table class="table table-striped">
+          <tr>
+            <th colspan="6">
+              <h3>Uploaded Files</h3>
+            </th>
+          </tr>
+          <% if @log_files.present? %>
+            <tr>
+              <th>File Name</th>
+              <th># Log Messages</th>
+              <th>Log Created At</th>
+              <th>Processed?</th>
+              <th colspan="2">Actions</th>
+            </tr>
+          <% end %>
+          <% if @log_files.present? %>
+            <% @log_files.each do |log_file| %>
+              <tr>
+                <td><%= log_file.filename %></td>
+                <td><%= log_file.num_lines %></td>
+                <td><%= log_file.log_start %></td>
+                <td><% if log_file.processed %>
+                    <%= image_tag("check-circle-fill.svg", style: "height: 30px; width: 30px;") %>
+                  <% else %>
+                    <%= image_tag("x-circle-fill.svg", style: "height: 30px; width: 30px;") %>
+                  <% end %>
+                </td>
+                <td>
+                  <% if log_file.processed %>
+                    <%= link_to "View", logs_show_log_file_path(log_file.id), class: "btn btn-primary" %>
+                  <% else %>
+                    <%= simple_form_for :user, url: visualizer_process_file_path(log_file.id), method: :post do |f| %>
+                      <%= f.button :submit, "Process", class: "bg-primary border" %>
+                    <% end %>
+                  <% end %>
+                </td>
+                <td>
+                  <%= simple_form_for :user, url: visualizer_destroy_file_path(log_file.id), method: :delete do |f| %>
+                    <%= f.button :submit, "Destroy", class: "bg-danger border border-white", onclick: "return confirm('Are you sure?')" %>
+                  <% end %>
+                </td>
+              </tr>
+            <% end %>
+          <% else %>
+            <tr>
+              <td colspan="5">No log files uploaded yet.</td>
+            </tr>
+          <% end %>
+      </table>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <%= simple_form_for :upload_files, url: visualizer_process_file_uploads_path do |form| %>
+        <%= form.file_field :upload_files, direct_upload: true, multiple: true, accept: "text/plain", class: "p-0 m-0" %>
+        <%= form.button :submit, "Upload", class: "btn btn-primary p-1" %>
+      <% end %>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+<h1><%= @log_file.filename %></h1>
+<br>
+<table class="table table-striped">
+<tr>
+    <th>Start Time</th>
+    <th>End Time</th>
+    <th>Log Duration</th>
+    <th># of Plans</th>
+    <th># of AutoRuns</th>
+    <th># of Log Messages</th>
+    <th># of Shooting Stages</th>
+    <th></th>
+</tr>
+    <% logs.each do |l| %>
+        <tr>
+            <td><%= l.log_start %></td>
+            <td><%= l.log_end %></td>
+            <td><%= log_duration(l) %></td>
+            <td><%= l.plans.count %></td>
+            <td><%= l.auto_runs.count %></td>
+            <td><%= l.log_messages.count %></td>
+            <td><%= l.shooting_stages.count %></td>
+            <td>
+                <%= link_to "View", log_show_path(log_file_id, l.id), class: "btn btn-primary", data: { turbo: false } %>
+            </td>
+        </tr>
+    <% end %>
+</table>

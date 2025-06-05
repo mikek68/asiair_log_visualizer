@@ -1,0 +1,28 @@
+<div class="container text-center">
+    <h1><%= @log_file.filename %></h1>
+    <br>
+    <table class="table table-striped">
+        <tr>
+            <th>Start Time</th>
+            <th>End Time</th>
+            <th>Log Duration</th>
+            <th># of Plans</th>
+            <th># of AutoRuns</th>
+            <th># of Log Messages</th>
+            <th>Actions</th>
+        </tr>
+        <% @logs.each do |l| %>
+            <tr>
+                <td><%= l.log_start %></td>
+                <td><%= l.log_end %></td>
+                <td><%= log_duration(l) %></td>
+                <td><%= l.plans.count %></td>
+                <td><%= l.auto_runs.count %></td>
+                <td><%= l.log_messages.count %></td>
+                <td>
+                    <%= link_to "View", visualizer_show_log_path(l.id), class: "btn btn-primary" %>
+                </td>
+            </tr>
+        <% end %>
+    </table>
+</div>

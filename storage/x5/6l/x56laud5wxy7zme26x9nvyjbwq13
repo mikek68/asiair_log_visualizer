@@ -1,0 +1,1024 @@
+Log enabled at 2024/12/11 19:57:23
+2024/12/11 19:57:23 Plan Horse Head Nebula Start
+2024/12/11 19:57:24 [Autorun|Begin] IC 434 Start
+2024/12/11 19:57:24 Wait 42min35s
+2024/12/11 20:03:44 Stop Autorun Manually
+2024/12/11 20:03:44 [Autorun|End] Pause Autorun
+2024/12/11 20:03:44 Pause Plan Horse Head Nebula
+Log disabled at 2024/12/11 20:03:44
+Log enabled at 2024/12/11 20:04:30
+2024/12/11 20:04:30 Plan Horse Head Nebula Start
+2024/12/11 20:04:31 [Autorun|Begin] IC 434 Start
+2024/12/11 20:04:31 Wait 35min28s
+2024/12/11 20:39:59 [AutoCenter|Begin] Auto-Center 1#
+2024/12/11 20:39:59 Mount slews to target position: RA:5h42m15s DEC:-2°26'32"
+2024/12/11 20:40:04 Exposure 10.0s
+2024/12/11 20:40:15 Plate Solve
+2024/12/11 20:40:17 Solve succeeded: RA:5h42m9s DEC:-2°26'47" Angle = -89.972, Star number = 544
+2024/12/11 20:40:18 [AutoCenter|End] Too far from center, distance = 2%(0.0255195°)
+2024/12/11 20:40:20 [AutoCenter|Begin] Auto-Center 2#
+2024/12/11 20:40:20 Mount slews to target position: RA:5h42m15s DEC:-2°26'32"
+2024/12/11 20:40:25 Exposure 10.0s
+2024/12/11 20:40:36 Plate Solve
+2024/12/11 20:40:38 Solve succeeded: RA:5h42m15s DEC:-2°26'32" Angle = -89.9699, Star number = 513
+2024/12/11 20:40:39 [AutoCenter|End] The target is centered
+2024/12/11 20:40:39 Start Tracking
+2024/12/11 20:40:48 [Guide] ReSelect Guide star
+2024/12/11 20:40:49 [Guide] Start Guiding
+2024/12/11 20:40:56 [Guide] Guide Settle
+2024/12/11 20:41:00 [Guide] Settle Done
+2024/12/11 20:41:00 Shooting 350 light frames, exposure 60.0s Bin1
+2024/12/11 20:41:00 Start Tracking
+2024/12/11 20:41:00 [Guide] Stop Guiding
+2024/12/11 20:41:00 [AutoFocus|Begin] Run AF before Autorun start, exposure 2.0s Bin1, temperature 15.2℃
+2024/12/11 20:41:00 Find Focus Star
+2024/12/11 20:41:07 Find Focus Star: detect and calculate star size 6.9 ,  EAF position 12533
+2024/12/11 20:41:07 Find Focus Star: finding appropriate stars star size 6.9
+2024/12/11 20:41:22 Find Focus Star: detect and calculate star size 8.2 ,  EAF position 12583
+2024/12/11 20:41:22 Calculate V-Curve
+2024/12/11 20:41:29 Calculate V-Curve: detect and calculate star size 7.5 ,  EAF position 12583
+2024/12/11 20:41:36 Calculate V-Curve: detect and calculate star size 7.0 ,  EAF position 12573
+2024/12/11 20:41:43 Calculate V-Curve: detect and calculate star size 6.3 ,  EAF position 12563
+2024/12/11 20:41:51 Calculate V-Curve: detect and calculate star size 5.6 ,  EAF position 12553
+2024/12/11 20:41:58 Calculate V-Curve: detect and calculate star size 5.2 ,  EAF position 12543
+2024/12/11 20:42:05 Calculate V-Curve: detect and calculate star size 4.0 ,  EAF position 12523
+2024/12/11 20:42:12 Calculate V-Curve: detect and calculate star size 3.5 ,  EAF position 12503
+2024/12/11 20:42:19 Calculate V-Curve: detect and calculate star size 3.7 ,  EAF position 12493
+2024/12/11 20:42:27 Calculate V-Curve: detect and calculate star size 4.1 ,  EAF position 12483
+2024/12/11 20:42:34 Calculate V-Curve: detect and calculate star size 4.7 ,  EAF position 12473
+2024/12/11 20:42:41 Calculate V-Curve: detect and calculate star size 4.8 ,  EAF position 12463
+2024/12/11 20:42:48 Calculate V-Curve: detect and calculate star size 5.4 ,  EAF position 12453
+2024/12/11 20:42:57 Find Focus Point
+2024/12/11 20:43:03 Calculate Focus Point: detect and calculate star size 3.9 ,  EAF position 12522
+2024/12/11 20:43:10 Calculate Focus Point: detect and calculate star size 4.2 ,  EAF position 12517
+2024/12/11 20:43:10 Auto focus succeeded, the focused position is 12517
+2024/12/11 20:43:10 [AutoFocus|End] Auto focus succeeded
+2024/12/11 20:43:17 [Guide] ReSelect Guide star
+2024/12/11 20:43:18 [Guide] Start Guiding
+2024/12/11 20:43:25 [Guide] Guide Settle
+2024/12/11 20:43:35 [Guide] Settle Done
+2024/12/11 20:43:35 Exposure 60.0s image 1#
+2024/12/11 20:44:36 Exposure 60.0s image 2#
+2024/12/11 20:45:37 [Guide] Dither
+2024/12/11 20:45:37 [Guide] Dither Settle
+2024/12/11 20:46:02 [Guide] Settle Done
+2024/12/11 20:46:02 Exposure 60.0s image 3#
+2024/12/11 20:47:03 Exposure 60.0s image 4#
+2024/12/11 20:48:05 [Guide] Dither
+2024/12/11 20:48:05 [Guide] Dither Settle
+2024/12/11 20:48:32 [Guide] Settle Done
+2024/12/11 20:48:32 Exposure 60.0s image 5#
+2024/12/11 20:49:33 Exposure 60.0s image 6#
+2024/12/11 20:50:34 [Guide] Dither
+2024/12/11 20:50:34 [Guide] Dither Settle
+2024/12/11 20:51:08 [Guide] Settle Done
+2024/12/11 20:51:08 Exposure 60.0s image 7#
+2024/12/11 20:52:09 Exposure 60.0s image 8#
+2024/12/11 20:53:10 [Guide] Dither
+2024/12/11 20:53:10 [Guide] Dither Settle
+2024/12/11 20:53:44 [Guide] Settle Done
+2024/12/11 20:53:44 Exposure 60.0s image 9#
+2024/12/11 20:54:46 Exposure 60.0s image 10#
+2024/12/11 20:55:47 [Guide] Dither
+2024/12/11 20:55:47 [Guide] Dither Settle
+2024/12/11 20:56:12 [Guide] Settle Done
+2024/12/11 20:56:12 Exposure 60.0s image 11#
+2024/12/11 20:57:13 Exposure 60.0s image 12#
+2024/12/11 20:58:14 [Guide] Dither
+2024/12/11 20:58:14 [Guide] Dither Settle
+2024/12/11 20:58:36 [Guide] Settle Done
+2024/12/11 20:58:36 Exposure 60.0s image 13#
+2024/12/11 20:59:37 Exposure 60.0s image 14#
+2024/12/11 21:00:38 [Guide] Dither
+2024/12/11 21:00:38 [Guide] Dither Settle
+2024/12/11 21:00:48 [Guide] Settle Done
+2024/12/11 21:00:48 Exposure 60.0s image 15#
+2024/12/11 21:01:49 Exposure 60.0s image 16#
+2024/12/11 21:02:50 [Guide] Dither
+2024/12/11 21:02:50 [Guide] Dither Settle
+2024/12/11 21:03:21 [Guide] Settle Done
+2024/12/11 21:03:21 Exposure 60.0s image 17#
+2024/12/11 21:04:22 Exposure 60.0s image 18#
+2024/12/11 21:05:23 [Guide] Dither
+2024/12/11 21:05:23 [Guide] Dither Settle
+2024/12/11 21:05:42 [Guide] Settle Done
+2024/12/11 21:05:42 Exposure 60.0s image 19#
+2024/12/11 21:06:43 Exposure 60.0s image 20#
+2024/12/11 21:07:44 [Guide] Dither
+2024/12/11 21:07:44 [Guide] Dither Settle
+2024/12/11 21:08:03 [Guide] Settle Done
+2024/12/11 21:08:03 Exposure 60.0s image 21#
+2024/12/11 21:09:04 Exposure 60.0s image 22#
+2024/12/11 21:10:05 [Guide] Dither
+2024/12/11 21:10:05 [Guide] Dither Settle
+2024/12/11 21:10:33 [Guide] Settle Done
+2024/12/11 21:10:33 Exposure 60.0s image 23#
+2024/12/11 21:11:34 Exposure 60.0s image 24#
+2024/12/11 21:12:35 [Guide] Dither
+2024/12/11 21:12:35 [Guide] Dither Settle
+2024/12/11 21:13:03 [Guide] Settle Done
+2024/12/11 21:13:03 Exposure 60.0s image 25#
+2024/12/11 21:14:04 Exposure 60.0s image 26#
+2024/12/11 21:15:05 [Guide] Dither
+2024/12/11 21:15:05 [Guide] Dither Settle
+2024/12/11 21:15:15 [Guide] Settle Done
+2024/12/11 21:15:15 Exposure 60.0s image 27#
+2024/12/11 21:16:16 Exposure 60.0s image 28#
+2024/12/11 21:17:17 [Guide] Dither
+2024/12/11 21:17:17 [Guide] Dither Settle
+2024/12/11 21:17:51 [Guide] Settle Done
+2024/12/11 21:17:51 Exposure 60.0s image 29#
+2024/12/11 21:18:52 Exposure 60.0s image 30#
+2024/12/11 21:19:53 [Guide] Dither
+2024/12/11 21:19:53 [Guide] Dither Settle
+2024/12/11 21:20:21 [Guide] Settle Done
+2024/12/11 21:20:21 Exposure 60.0s image 31#
+2024/12/11 21:21:22 Exposure 60.0s image 32#
+2024/12/11 21:22:23 [Guide] Dither
+2024/12/11 21:22:23 [Guide] Dither Settle
+2024/12/11 21:22:54 [Guide] Settle Done
+2024/12/11 21:22:54 Exposure 60.0s image 33#
+2024/12/11 21:23:55 Exposure 60.0s image 34#
+2024/12/11 21:24:56 [Guide] Dither
+2024/12/11 21:24:56 [Guide] Dither Settle
+2024/12/11 21:25:15 [Guide] Settle Done
+2024/12/11 21:25:15 Exposure 60.0s image 35#
+2024/12/11 21:26:16 Exposure 60.0s image 36#
+2024/12/11 21:27:17 [Guide] Dither
+2024/12/11 21:27:17 [Guide] Dither Settle
+2024/12/11 21:27:27 [Guide] Settle Done
+2024/12/11 21:27:27 Exposure 60.0s image 37#
+2024/12/11 21:28:28 Exposure 60.0s image 38#
+2024/12/11 21:29:29 [Guide] Dither
+2024/12/11 21:29:29 [Guide] Dither Settle
+2024/12/11 21:30:00 [Guide] Settle Done
+2024/12/11 21:30:00 Exposure 60.0s image 39#
+2024/12/11 21:31:01 Exposure 60.0s image 40#
+2024/12/11 21:32:02 [Guide] Dither
+2024/12/11 21:32:02 [Guide] Dither Settle
+2024/12/11 21:32:30 [Guide] Settle Done
+2024/12/11 21:32:30 Exposure 60.0s image 41#
+2024/12/11 21:33:31 Exposure 60.0s image 42#
+2024/12/11 21:34:32 [Guide] Dither
+2024/12/11 21:34:32 [Guide] Dither Settle
+2024/12/11 21:34:57 [Guide] Settle Done
+2024/12/11 21:34:57 Exposure 60.0s image 43#
+2024/12/11 21:35:58 Exposure 60.0s image 44#
+2024/12/11 21:36:59 [Guide] Dither
+2024/12/11 21:36:59 [Guide] Dither Settle
+2024/12/11 21:37:30 [Guide] Settle Done
+2024/12/11 21:37:30 Exposure 60.0s image 45#
+2024/12/11 21:38:31 Exposure 60.0s image 46#
+2024/12/11 21:39:32 [Guide] Dither
+2024/12/11 21:39:32 [Guide] Dither Settle
+2024/12/11 21:40:03 [Guide] Settle Done
+2024/12/11 21:40:03 Exposure 60.0s image 47#
+2024/12/11 21:41:04 Exposure 60.0s image 48#
+2024/12/11 21:42:05 [Guide] Dither
+2024/12/11 21:42:05 [Guide] Dither Settle
+2024/12/11 21:42:36 [Guide] Settle Done
+2024/12/11 21:42:36 Exposure 60.0s image 49#
+2024/12/11 21:43:37 Exposure 60.0s image 50#
+2024/12/11 21:44:38 [Guide] Dither
+2024/12/11 21:44:38 [Guide] Dither Settle
+2024/12/11 21:45:09 [Guide] Settle Done
+2024/12/11 21:45:09 Exposure 60.0s image 51#
+2024/12/11 21:46:10 Exposure 60.0s image 52#
+2024/12/11 21:47:11 [Guide] Dither
+2024/12/11 21:47:11 [Guide] Dither Settle
+2024/12/11 21:47:39 [Guide] Settle Done
+2024/12/11 21:47:39 Exposure 60.0s image 53#
+2024/12/11 21:48:40 Exposure 60.0s image 54#
+2024/12/11 21:49:41 [Guide] Dither
+2024/12/11 21:49:41 [Guide] Dither Settle
+2024/12/11 21:50:03 [Guide] Settle Done
+2024/12/11 21:50:03 Exposure 60.0s image 55#
+2024/12/11 21:51:04 Exposure 60.0s image 56#
+2024/12/11 21:52:05 [Guide] Dither
+2024/12/11 21:52:05 [Guide] Dither Settle
+2024/12/11 21:52:27 [Guide] Settle Done
+2024/12/11 21:52:27 Exposure 60.0s image 57#
+2024/12/11 21:53:28 Exposure 60.0s image 58#
+2024/12/11 21:54:29 [Guide] Dither
+2024/12/11 21:54:29 [Guide] Dither Settle
+2024/12/11 21:55:03 [Guide] Settle Done
+2024/12/11 21:55:03 Exposure 60.0s image 59#
+2024/12/11 21:56:04 Exposure 60.0s image 60#
+2024/12/11 21:57:05 [Guide] Dither
+2024/12/11 21:57:05 [Guide] Dither Settle
+2024/12/11 21:57:36 [Guide] Settle Done
+2024/12/11 21:57:36 Exposure 60.0s image 61#
+2024/12/11 21:58:37 Exposure 60.0s image 62#
+2024/12/11 21:59:38 [Guide] Dither
+2024/12/11 21:59:38 [Guide] Dither Settle
+2024/12/11 22:00:12 [Guide] Settle Done
+2024/12/11 22:00:12 Exposure 60.0s image 63#
+2024/12/11 22:01:13 Exposure 60.0s image 64#
+2024/12/11 22:02:14 [Guide] Dither
+2024/12/11 22:02:14 [Guide] Dither Settle
+2024/12/11 22:02:45 [Guide] Settle Done
+2024/12/11 22:02:45 Exposure 60.0s image 65#
+2024/12/11 22:03:46 Exposure 60.0s image 66#
+2024/12/11 22:04:47 [Guide] Dither
+2024/12/11 22:04:47 [Guide] Dither Settle
+2024/12/11 22:04:57 [Guide] Settle Done
+2024/12/11 22:04:57 Exposure 60.0s image 67#
+2024/12/11 22:05:58 Exposure 60.0s image 68#
+2024/12/11 22:06:59 [Guide] Dither
+2024/12/11 22:06:59 [Guide] Dither Settle
+2024/12/11 22:07:24 [Guide] Settle Done
+2024/12/11 22:07:24 Exposure 60.0s image 69#
+2024/12/11 22:08:25 Exposure 60.0s image 70#
+2024/12/11 22:09:26 [Guide] Dither
+2024/12/11 22:09:26 [Guide] Dither Settle
+2024/12/11 22:09:48 [Guide] Settle Done
+2024/12/11 22:09:48 Exposure 60.0s image 71#
+2024/12/11 22:10:49 Exposure 60.0s image 72#
+2024/12/11 22:11:50 [Guide] Dither
+2024/12/11 22:11:50 [Guide] Dither Settle
+2024/12/11 22:12:30 [Guide] Settle Done
+2024/12/11 22:12:30 Exposure 60.0s image 73#
+2024/12/11 22:13:31 Exposure 60.0s image 74#
+2024/12/11 22:14:32 [Guide] Dither
+2024/12/11 22:14:32 [Guide] Dither Settle
+2024/12/11 22:15:03 [Guide] Settle Done
+2024/12/11 22:15:03 Exposure 60.0s image 75#
+2024/12/11 22:16:04 Exposure 60.0s image 76#
+2024/12/11 22:17:05 [Guide] Dither
+2024/12/11 22:17:05 [Guide] Dither Settle
+2024/12/11 22:17:36 [Guide] Settle Done
+2024/12/11 22:17:36 Exposure 60.0s image 77#
+2024/12/11 22:18:37 Exposure 60.0s image 78#
+2024/12/11 22:19:38 [Guide] Dither
+2024/12/11 22:19:38 [Guide] Dither Settle
+2024/12/11 22:20:06 [Guide] Settle Done
+2024/12/11 22:20:06 Exposure 60.0s image 79#
+2024/12/11 22:21:07 Exposure 60.0s image 80#
+2024/12/11 22:22:08 [Guide] Dither
+2024/12/11 22:22:08 [Guide] Dither Settle
+2024/12/11 22:22:33 [Guide] Settle Done
+2024/12/11 22:22:33 Exposure 60.0s image 81#
+2024/12/11 22:23:34 Exposure 60.0s image 82#
+2024/12/11 22:24:35 [Guide] Dither
+2024/12/11 22:24:35 [Guide] Dither Settle
+2024/12/11 22:25:12 [Guide] Settle Done
+2024/12/11 22:25:12 Exposure 60.0s image 83#
+2024/12/11 22:26:13 Exposure 60.0s image 84#
+2024/12/11 22:27:14 [Guide] Dither
+2024/12/11 22:27:14 [Guide] Dither Settle
+2024/12/11 22:27:42 [Guide] Settle Done
+2024/12/11 22:27:42 Exposure 60.0s image 85#
+2024/12/11 22:28:43 Exposure 60.0s image 86#
+2024/12/11 22:29:44 [Guide] Dither
+2024/12/11 22:29:44 [Guide] Dither Settle
+2024/12/11 22:30:14 [Guide] Settle Done
+2024/12/11 22:30:15 Exposure 60.0s image 87#
+2024/12/11 22:31:16 Exposure 60.0s image 88#
+2024/12/11 22:32:17 [Guide] Dither
+2024/12/11 22:32:17 [Guide] Dither Settle
+2024/12/11 22:32:50 [Guide] Settle Done
+2024/12/11 22:32:51 Exposure 60.0s image 89#
+2024/12/11 22:33:52 Exposure 60.0s image 90#
+2024/12/11 22:34:53 [Guide] Dither
+2024/12/11 22:34:53 [Guide] Dither Settle
+2024/12/11 22:35:14 [Guide] Settle Done
+2024/12/11 22:35:15 Exposure 60.0s image 91#
+2024/12/11 22:36:16 Exposure 60.0s image 92#
+2024/12/11 22:37:17 [Guide] Dither
+2024/12/11 22:37:17 [Guide] Dither Settle
+2024/12/11 22:38:02 [Guide] Settle Done
+2024/12/11 22:38:03 Exposure 60.0s image 93#
+2024/12/11 22:39:04 Exposure 60.0s image 94#
+2024/12/11 22:40:05 [Guide] Dither
+2024/12/11 22:40:05 [Guide] Dither Settle
+2024/12/11 22:40:35 [Guide] Settle Done
+2024/12/11 22:40:36 Exposure 60.0s image 95#
+2024/12/11 22:41:37 Exposure 60.0s image 96#
+2024/12/11 22:42:38 [Guide] Dither
+2024/12/11 22:42:38 [Guide] Dither Settle
+2024/12/11 22:43:47 [Guide] Settle Done
+2024/12/11 22:43:48 Exposure 60.0s image 97#
+2024/12/11 22:44:49 Exposure 60.0s image 98#
+2024/12/11 22:45:50 [Guide] Dither
+2024/12/11 22:45:50 [Guide] Dither Settle
+2024/12/11 22:46:26 [Guide] Settle Done
+2024/12/11 22:46:27 Start Tracking
+2024/12/11 22:46:27 [Guide] Stop Guiding
+2024/12/11 22:46:27 [AutoFocus|Begin] Run AF when temperature changed 2 degrees, 15.6℃ changed to 13.5℃, exposure 2.0s Bin1, temperature 13.5℃
+2024/12/11 22:46:27 Find Focus Star
+2024/12/11 22:46:33 Find Focus Star: detect and calculate star size 4.5 ,  EAF position 12517
+2024/12/11 22:46:33 Find Focus Star: finding appropriate stars star size 4.5
+2024/12/11 22:46:49 Find Focus Star: detect and calculate star size 8.1 ,  EAF position 12567
+2024/12/11 22:46:49 Calculate V-Curve
+2024/12/11 22:46:55 Calculate V-Curve: detect and calculate star size 8.0 ,  EAF position 12567
+2024/12/11 22:47:03 Calculate V-Curve: detect and calculate star size 7.5 ,  EAF position 12557
+2024/12/11 22:47:10 Calculate V-Curve: detect and calculate star size 7.1 ,  EAF position 12547
+2024/12/11 22:47:17 Calculate V-Curve: detect and calculate star size 5.8 ,  EAF position 12537
+2024/12/11 22:47:25 Calculate V-Curve: detect and calculate star size 5.2 ,  EAF position 12527
+2024/12/11 22:47:32 Calculate V-Curve: detect and calculate star size 4.6 ,  EAF position 12517
+2024/12/11 22:47:39 Calculate V-Curve: detect and calculate star size 4.0 ,  EAF position 12507
+2024/12/11 22:47:46 Calculate V-Curve: detect and calculate star size 3.6 ,  EAF position 12497
+2024/12/11 22:47:54 Calculate V-Curve: detect and calculate star size 3.0 ,  EAF position 12477
+2024/12/11 22:48:01 Calculate V-Curve: detect and calculate star size 3.3 ,  EAF position 12467
+2024/12/11 22:48:08 Calculate V-Curve: detect and calculate star size 3.5 ,  EAF position 12457
+2024/12/11 22:48:16 Calculate V-Curve: detect and calculate star size 3.7 ,  EAF position 12447
+2024/12/11 22:48:23 Calculate V-Curve: detect and calculate star size 4.1 ,  EAF position 12437
+2024/12/11 22:48:30 Calculate V-Curve: detect and calculate star size 4.6 ,  EAF position 12427
+2024/12/11 22:48:39 Find Focus Point
+2024/12/11 22:48:46 Calculate Focus Point: detect and calculate star size 3.2 ,  EAF position 12491
+2024/12/11 22:48:53 Calculate Focus Point: detect and calculate star size 3.1 ,  EAF position 12486
+2024/12/11 22:48:59 Calculate Focus Point: detect and calculate star size 3.1 ,  EAF position 12481
+2024/12/11 22:49:06 Calculate Focus Point: detect and calculate star size 3.0 ,  EAF position 12476
+2024/12/11 22:49:13 Calculate Focus Point: detect and calculate star size 3.1 ,  EAF position 12471
+2024/12/11 22:49:13 Auto focus succeeded, the focused position is 12471
+2024/12/11 22:49:13 [AutoFocus|End] Auto focus succeeded
+2024/12/11 22:49:20 [Guide] ReSelect Guide star
+2024/12/11 22:49:21 [Guide] Start Guiding
+2024/12/11 22:49:28 [Guide] Guide Settle
+2024/12/11 22:49:32 [Guide] Settle Done
+2024/12/11 22:49:32 Exposure 60.0s image 99#
+2024/12/11 22:50:33 Exposure 60.0s image 100#
+2024/12/11 22:51:34 [Guide] Dither
+2024/12/11 22:51:34 [Guide] Dither Settle
+2024/12/11 22:51:59 [Guide] Settle Done
+2024/12/11 22:52:00 Exposure 60.0s image 101#
+2024/12/11 22:53:01 Exposure 60.0s image 102#
+2024/12/11 22:54:02 [Guide] Dither
+2024/12/11 22:54:02 [Guide] Dither Settle
+2024/12/11 22:54:26 [Guide] Settle Done
+2024/12/11 22:54:27 Exposure 60.0s image 103#
+2024/12/11 22:55:28 Exposure 60.0s image 104#
+2024/12/11 22:56:29 [Guide] Dither
+2024/12/11 22:56:29 [Guide] Dither Settle
+2024/12/11 22:56:59 [Guide] Settle Done
+2024/12/11 22:57:00 Exposure 60.0s image 105#
+2024/12/11 22:58:01 Exposure 60.0s image 106#
+2024/12/11 22:59:02 [Guide] Dither
+2024/12/11 22:59:02 [Guide] Dither Settle
+2024/12/11 22:59:29 [Guide] Settle Done
+2024/12/11 22:59:29 Exposure 60.0s image 107#
+2024/12/11 23:00:31 Exposure 60.0s image 108#
+2024/12/11 23:01:32 [Guide] Dither
+2024/12/11 23:01:32 [Guide] Dither Settle
+2024/12/11 23:01:41 [Guide] Settle Done
+2024/12/11 23:01:41 Exposure 60.0s image 109#
+2024/12/11 23:02:43 Exposure 60.0s image 110#
+2024/12/11 23:03:44 [Guide] Dither
+2024/12/11 23:03:44 [Guide] Dither Settle
+2024/12/11 23:04:05 [Guide] Settle Done
+2024/12/11 23:04:05 Exposure 60.0s image 111#
+2024/12/11 23:05:06 Exposure 60.0s image 112#
+2024/12/11 23:06:08 [Guide] Dither
+2024/12/11 23:06:08 [Guide] Dither Settle
+2024/12/11 23:06:20 [Guide] Settle Done
+2024/12/11 23:06:20 Exposure 60.0s image 113#
+2024/12/11 23:07:21 Exposure 60.0s image 114#
+2024/12/11 23:08:22 [Guide] Dither
+2024/12/11 23:08:22 [Guide] Dither Settle
+2024/12/11 23:08:41 [Guide] Settle Done
+2024/12/11 23:08:41 Exposure 60.0s image 115#
+2024/12/11 23:09:42 Exposure 60.0s image 116#
+2024/12/11 23:10:44 [Guide] Dither
+2024/12/11 23:10:44 [Guide] Dither Settle
+2024/12/11 23:11:05 [Guide] Settle Done
+2024/12/11 23:11:05 Exposure 60.0s image 117#
+2024/12/11 23:12:06 Exposure 60.0s image 118#
+2024/12/11 23:13:07 [Guide] Dither
+2024/12/11 23:13:08 [Guide] Dither Settle
+2024/12/11 23:13:17 [Guide] Settle Done
+2024/12/11 23:13:17 Exposure 60.0s image 119#
+2024/12/11 23:14:19 Exposure 60.0s image 120#
+2024/12/11 23:15:20 [Guide] Dither
+2024/12/11 23:15:20 [Guide] Dither Settle
+2024/12/11 23:15:50 [Guide] Settle Done
+2024/12/11 23:15:50 Exposure 60.0s image 121#
+2024/12/11 23:16:51 Exposure 60.0s image 122#
+2024/12/11 23:17:53 [Guide] Dither
+2024/12/11 23:17:53 [Guide] Dither Settle
+2024/12/11 23:18:23 [Guide] Settle Done
+2024/12/11 23:18:23 Exposure 60.0s image 123#
+2024/12/11 23:19:25 Exposure 60.0s image 124#
+2024/12/11 23:20:26 [Guide] Dither
+2024/12/11 23:20:26 [Guide] Dither Settle
+2024/12/11 23:20:41 [Guide] Settle Done
+2024/12/11 23:20:41 Exposure 60.0s image 125#
+2024/12/11 23:21:42 Exposure 60.0s image 126#
+2024/12/11 23:22:43 [Guide] Dither
+2024/12/11 23:22:43 [Guide] Dither Settle
+2024/12/11 23:23:02 [Guide] Settle Done
+2024/12/11 23:23:02 Exposure 60.0s image 127#
+2024/12/11 23:24:03 Exposure 60.0s image 128#
+2024/12/11 23:25:05 [Guide] Dither
+2024/12/11 23:25:05 [Guide] Dither Settle
+2024/12/11 23:25:17 [Guide] Settle Done
+2024/12/11 23:25:17 Exposure 60.0s image 129#
+2024/12/11 23:26:18 Exposure 60.0s image 130#
+2024/12/11 23:27:20 [Guide] Dither
+2024/12/11 23:27:20 [Guide] Dither Settle
+2024/12/11 23:27:41 [Guide] Settle Done
+2024/12/11 23:27:41 Exposure 60.0s image 131#
+2024/12/11 23:28:42 Exposure 60.0s image 132#
+2024/12/11 23:29:43 [Guide] Dither
+2024/12/11 23:29:43 [Guide] Dither Settle
+2024/12/11 23:30:05 [Guide] Settle Done
+2024/12/11 23:30:05 Exposure 60.0s image 133#
+2024/12/11 23:31:06 Exposure 60.0s image 134#
+2024/12/11 23:32:08 [Guide] Dither
+2024/12/11 23:32:08 [Guide] Dither Settle
+2024/12/11 23:32:23 [Guide] Settle Done
+2024/12/11 23:32:23 Exposure 60.0s image 135#
+2024/12/11 23:33:24 Exposure 60.0s image 136#
+2024/12/11 23:34:25 [Guide] Dither
+2024/12/11 23:34:25 [Guide] Dither Settle
+2024/12/11 23:34:50 [Guide] Settle Done
+2024/12/11 23:34:50 Exposure 60.0s image 137#
+2024/12/11 23:35:51 Exposure 60.0s image 138#
+2024/12/11 23:36:52 [Guide] Dither
+2024/12/11 23:36:52 [Guide] Dither Settle
+2024/12/11 23:37:14 [Guide] Settle Done
+2024/12/11 23:37:14 Exposure 60.0s image 139#
+2024/12/11 23:38:15 Exposure 60.0s image 140#
+2024/12/11 23:39:16 [Guide] Dither
+2024/12/11 23:39:16 [Guide] Dither Settle
+2024/12/11 23:39:38 [Guide] Settle Done
+2024/12/11 23:39:38 Exposure 60.0s image 141#
+2024/12/11 23:40:39 Exposure 60.0s image 142#
+2024/12/11 23:41:40 [Guide] Dither
+2024/12/11 23:41:40 [Guide] Dither Settle
+2024/12/11 23:42:14 [Guide] Settle Done
+2024/12/11 23:42:14 Exposure 60.0s image 143#
+2024/12/11 23:43:15 Exposure 60.0s image 144#
+2024/12/11 23:44:16 [Guide] Dither
+2024/12/11 23:44:16 [Guide] Dither Settle
+2024/12/11 23:44:32 [Guide] Settle Done
+2024/12/11 23:44:32 Exposure 60.0s image 145#
+2024/12/11 23:45:33 Exposure 60.0s image 146#
+2024/12/11 23:46:34 [Guide] Dither
+2024/12/11 23:46:34 [Guide] Dither Settle
+2024/12/11 23:46:59 [Guide] Settle Done
+2024/12/11 23:46:59 Exposure 60.0s image 147#
+2024/12/11 23:48:00 Exposure 60.0s image 148#
+2024/12/11 23:49:01 [Guide] Dither
+2024/12/11 23:49:01 [Guide] Dither Settle
+2024/12/11 23:49:23 [Guide] Settle Done
+2024/12/11 23:49:23 Exposure 60.0s image 149#
+2024/12/11 23:50:24 Exposure 60.0s image 150#
+2024/12/11 23:51:25 [Guide] Dither
+2024/12/11 23:51:25 [Guide] Dither Settle
+2024/12/11 23:51:56 [Guide] Settle Done
+2024/12/11 23:51:56 Exposure 60.0s image 151#
+2024/12/11 23:52:57 Exposure 60.0s image 152#
+2024/12/11 23:53:58 [Guide] Dither
+2024/12/11 23:53:58 [Guide] Dither Settle
+2024/12/11 23:54:23 [Guide] Settle Done
+2024/12/11 23:54:23 Exposure 60.0s image 153#
+2024/12/11 23:55:24 Exposure 60.0s image 154#
+2024/12/11 23:56:25 [Guide] Dither
+2024/12/11 23:56:25 [Guide] Dither Settle
+2024/12/11 23:56:53 [Guide] Settle Done
+2024/12/11 23:56:53 [Guide] Stop Guiding
+2024/12/11 23:56:53 Stop Tracking
+2024/12/11 23:56:54 [Meridian Flip|Begin] Wait 4min58s to Meridian Flip
+2024/12/12 00:01:52 Meridian Flip 1# Start
+2024/12/12 00:01:52 [AutoCenter|Begin] Auto-Center 1#
+2024/12/12 00:01:52 Mount slews to target position: RA:5h42m15s DEC:-2°26'32"
+2024/12/12 00:02:39 Exposure 10.0s
+2024/12/12 00:02:50 Plate Solve
+2024/12/12 00:02:52 Solve succeeded: RA:5h42m46s DEC:-2°17'36" Angle = 90.1867, Star number = 584
+2024/12/12 00:02:53 [AutoCenter|End] Too far from center, distance = 16%(0.197391°)
+2024/12/12 00:02:55 [AutoCenter|Begin] Auto-Center 2#
+2024/12/12 00:02:55 Mount slews to target position: RA:5h42m15s DEC:-2°26'32"
+2024/12/12 00:03:00 Exposure 10.0s
+2024/12/12 00:03:11 Plate Solve
+2024/12/12 00:03:13 Solve succeeded: RA:5h42m16s DEC:-2°26'40" Angle = 90.1803, Star number = 673
+2024/12/12 00:03:13 The Mount has flipped
+2024/12/12 00:03:13 [AutoCenter|End] The target is centered
+2024/12/12 00:03:14 [Guide] Calibration data Flipped
+2024/12/12 00:03:14 [Meridian Flip|End] Meridian Flip succeeded
+2024/12/12 00:03:14 Start Tracking
+2024/12/12 00:03:14 Wait for Mount Settle
+2024/12/12 00:03:19 Start Tracking
+2024/12/12 00:03:19 [AutoFocus|Begin] Run AF after Auto Meridian filpped, exposure 2.0s Bin1, temperature 13.5℃
+2024/12/12 00:03:19 Find Focus Star
+2024/12/12 00:03:25 Find Focus Star: detect and calculate star size 2.9 ,  EAF position 12471
+2024/12/12 00:03:25 Find Focus Star: finding appropriate stars star size 2.9
+2024/12/12 00:03:41 Find Focus Star: detect and calculate star size 4.8 ,  EAF position 12521
+2024/12/12 00:03:41 Calculate V-Curve
+2024/12/12 00:03:48 Calculate V-Curve: detect and calculate star size 4.7 ,  EAF position 12521
+2024/12/12 00:03:55 Calculate V-Curve: detect and calculate star size 4.3 ,  EAF position 12511
+2024/12/12 00:04:02 Calculate V-Curve: detect and calculate star size 3.7 ,  EAF position 12501
+2024/12/12 00:04:10 Calculate V-Curve: detect and calculate star size 3.3 ,  EAF position 12491
+2024/12/12 00:04:17 Calculate V-Curve: detect and calculate star size 3.1 ,  EAF position 12481
+2024/12/12 00:04:24 Calculate V-Curve: detect and calculate star size 3.0 ,  EAF position 12471
+2024/12/12 00:04:32 Calculate V-Curve: detect and calculate star size 3.5 ,  EAF position 12461
+2024/12/12 00:04:39 Calculate V-Curve: detect and calculate star size 3.6 ,  EAF position 12451
+2024/12/12 00:04:46 Calculate V-Curve: detect and calculate star size 3.9 ,  EAF position 12441
+2024/12/12 00:04:54 Calculate V-Curve: detect and calculate star size 4.3 ,  EAF position 12431
+2024/12/12 00:05:03 Find Focus Point
+2024/12/12 00:05:09 Calculate Focus Point: detect and calculate star size 3.1 ,  EAF position 12492
+2024/12/12 00:05:16 Calculate Focus Point: detect and calculate star size 3.1 ,  EAF position 12487
+2024/12/12 00:05:23 Calculate Focus Point: detect and calculate star size 3.0 ,  EAF position 12482
+2024/12/12 00:05:29 Calculate Focus Point: detect and calculate star size 3.0 ,  EAF position 12477
+2024/12/12 00:05:36 Calculate Focus Point: detect and calculate star size 3.1 ,  EAF position 12472
+2024/12/12 00:05:36 Auto focus succeeded, the focused position is 12472
+2024/12/12 00:05:36 [AutoFocus|End] Auto focus succeeded
+2024/12/12 00:05:44 [Guide] ReSelect Guide star
+2024/12/12 00:05:45 [Guide] Start Calibrating
+2024/12/12 00:06:26 [Guide] Calibrate Success
+2024/12/12 00:06:27 [Guide] Guide Settle
+2024/12/12 00:07:20 [Guide] Settle Done
+2024/12/12 00:07:20 Exposure 60.0s image 155#
+2024/12/12 00:08:21 Exposure 60.0s image 156#
+2024/12/12 00:09:22 [Guide] Dither
+2024/12/12 00:09:22 [Guide] Dither Settle
+2024/12/12 00:09:44 [Guide] Settle Done
+2024/12/12 00:09:44 Exposure 60.0s image 157#
+2024/12/12 00:10:45 Exposure 60.0s image 158#
+2024/12/12 00:11:46 [Guide] Dither
+2024/12/12 00:11:46 [Guide] Dither Settle
+2024/12/12 00:12:17 [Guide] Settle Done
+2024/12/12 00:12:17 Exposure 60.0s image 159#
+2024/12/12 00:13:18 Exposure 60.0s image 160#
+2024/12/12 00:14:19 [Guide] Dither
+2024/12/12 00:14:19 [Guide] Dither Settle
+2024/12/12 00:14:41 [Guide] Settle Done
+2024/12/12 00:14:41 Exposure 60.0s image 161#
+2024/12/12 00:15:42 Exposure 60.0s image 162#
+2024/12/12 00:16:43 [Guide] Dither
+2024/12/12 00:16:43 [Guide] Dither Settle
+2024/12/12 00:17:08 [Guide] Settle Done
+2024/12/12 00:17:08 Exposure 60.0s image 163#
+2024/12/12 00:18:09 Exposure 60.0s image 164#
+2024/12/12 00:19:10 [Guide] Dither
+2024/12/12 00:19:10 [Guide] Dither Settle
+2024/12/12 00:19:44 [Guide] Settle Done
+2024/12/12 00:19:44 Exposure 60.0s image 165#
+2024/12/12 00:20:45 Exposure 60.0s image 166#
+2024/12/12 00:21:46 [Guide] Dither
+2024/12/12 00:21:46 [Guide] Dither Settle
+2024/12/12 00:22:14 [Guide] Settle Done
+2024/12/12 00:22:14 Exposure 60.0s image 167#
+2024/12/12 00:23:15 Exposure 60.0s image 168#
+2024/12/12 00:24:16 [Guide] Dither
+2024/12/12 00:24:16 [Guide] Dither Settle
+2024/12/12 00:24:50 [Guide] Settle Done
+2024/12/12 00:24:50 Exposure 60.0s image 169#
+2024/12/12 00:25:51 Exposure 60.0s image 170#
+2024/12/12 00:26:52 [Guide] Dither
+2024/12/12 00:26:52 [Guide] Dither Settle
+2024/12/12 00:27:14 [Guide] Settle Done
+2024/12/12 00:27:14 Exposure 60.0s image 171#
+2024/12/12 00:28:15 Exposure 60.0s image 172#
+2024/12/12 00:29:16 [Guide] Dither
+2024/12/12 00:29:16 [Guide] Dither Settle
+2024/12/12 00:29:53 [Guide] Settle Done
+2024/12/12 00:29:53 Exposure 60.0s image 173#
+2024/12/12 00:30:54 Exposure 60.0s image 174#
+2024/12/12 00:31:55 [Guide] Dither
+2024/12/12 00:31:55 [Guide] Dither Settle
+2024/12/12 00:32:26 [Guide] Settle Done
+2024/12/12 00:32:26 Exposure 60.0s image 175#
+2024/12/12 00:33:27 Exposure 60.0s image 176#
+2024/12/12 00:34:28 [Guide] Dither
+2024/12/12 00:34:28 [Guide] Dither Settle
+2024/12/12 00:34:38 [Guide] Settle Done
+2024/12/12 00:34:38 Exposure 60.0s image 177#
+2024/12/12 00:35:39 Exposure 60.0s image 178#
+2024/12/12 00:36:40 [Guide] Dither
+2024/12/12 00:36:40 [Guide] Dither Settle
+2024/12/12 00:36:56 [Guide] Settle Done
+2024/12/12 00:36:56 Exposure 60.0s image 179#
+2024/12/12 00:37:57 Exposure 60.0s image 180#
+2024/12/12 00:38:58 [Guide] Dither
+2024/12/12 00:38:58 [Guide] Dither Settle
+2024/12/12 00:39:26 [Guide] Settle Done
+2024/12/12 00:39:26 Exposure 60.0s image 181#
+2024/12/12 00:40:27 Exposure 60.0s image 182#
+2024/12/12 00:41:28 [Guide] Dither
+2024/12/12 00:41:28 [Guide] Dither Settle
+2024/12/12 00:41:38 [Guide] Settle Done
+2024/12/12 00:41:38 Exposure 60.0s image 183#
+2024/12/12 00:42:39 Exposure 60.0s image 184#
+2024/12/12 00:43:40 [Guide] Dither
+2024/12/12 00:43:40 [Guide] Dither Settle
+2024/12/12 00:43:50 [Guide] Settle Done
+2024/12/12 00:43:50 Exposure 60.0s image 185#
+2024/12/12 00:44:51 Exposure 60.0s image 186#
+2024/12/12 00:45:52 [Guide] Dither
+2024/12/12 00:45:52 [Guide] Dither Settle
+2024/12/12 00:46:17 [Guide] Settle Done
+2024/12/12 00:46:17 Exposure 60.0s image 187#
+2024/12/12 00:47:18 Exposure 60.0s image 188#
+2024/12/12 00:48:19 [Guide] Dither
+2024/12/12 00:48:19 [Guide] Dither Settle
+2024/12/12 00:48:38 [Guide] Settle Done
+2024/12/12 00:48:38 Exposure 60.0s image 189#
+2024/12/12 00:49:39 Exposure 60.0s image 190#
+2024/12/12 00:50:40 [Guide] Dither
+2024/12/12 00:50:40 [Guide] Dither Settle
+2024/12/12 00:51:14 [Guide] Settle Done
+2024/12/12 00:51:14 Exposure 60.0s image 191#
+2024/12/12 00:52:15 Exposure 60.0s image 192#
+2024/12/12 00:53:16 [Guide] Dither
+2024/12/12 00:53:16 [Guide] Dither Settle
+2024/12/12 00:53:41 [Guide] Settle Done
+2024/12/12 00:53:41 Exposure 60.0s image 193#
+2024/12/12 00:54:42 Exposure 60.0s image 194#
+2024/12/12 00:55:43 [Guide] Dither
+2024/12/12 00:55:43 [Guide] Dither Settle
+2024/12/12 00:56:02 [Guide] Settle Done
+2024/12/12 00:56:02 Exposure 60.0s image 195#
+2024/12/12 00:57:03 Exposure 60.0s image 196#
+2024/12/12 00:58:04 [Guide] Dither
+2024/12/12 00:58:04 [Guide] Dither Settle
+2024/12/12 00:58:29 [Guide] Settle Done
+2024/12/12 00:58:29 Exposure 60.0s image 197#
+2024/12/12 00:59:30 Exposure 60.0s image 198#
+2024/12/12 01:00:31 [Guide] Dither
+2024/12/12 01:00:31 [Guide] Dither Settle
+2024/12/12 01:01:02 [Guide] Settle Done
+2024/12/12 01:01:02 Exposure 60.0s image 199#
+2024/12/12 01:02:03 Exposure 60.0s image 200#
+2024/12/12 01:03:04 [Guide] Dither
+2024/12/12 01:03:04 [Guide] Dither Settle
+2024/12/12 01:03:32 [Guide] Settle Done
+2024/12/12 01:03:32 Exposure 60.0s image 201#
+2024/12/12 01:04:33 Exposure 60.0s image 202#
+2024/12/12 01:05:34 [Guide] Dither
+2024/12/12 01:05:34 [Guide] Dither Settle
+2024/12/12 01:06:02 [Guide] Settle Done
+2024/12/12 01:06:02 Exposure 60.0s image 203#
+2024/12/12 01:07:03 Exposure 60.0s image 204#
+2024/12/12 01:08:04 [Guide] Dither
+2024/12/12 01:08:04 [Guide] Dither Settle
+2024/12/12 01:08:38 [Guide] Settle Done
+2024/12/12 01:08:38 Exposure 60.0s image 205#
+2024/12/12 01:09:39 Exposure 60.0s image 206#
+2024/12/12 01:10:40 [Guide] Dither
+2024/12/12 01:10:40 [Guide] Dither Settle
+2024/12/12 01:10:50 [Guide] Settle Done
+2024/12/12 01:10:50 Exposure 60.0s image 207#
+2024/12/12 01:11:51 Exposure 60.0s image 208#
+2024/12/12 01:12:52 [Guide] Dither
+2024/12/12 01:12:52 [Guide] Dither Settle
+2024/12/12 01:13:20 [Guide] Settle Done
+2024/12/12 01:13:20 Exposure 60.0s image 209#
+2024/12/12 01:14:21 Exposure 60.0s image 210#
+2024/12/12 01:15:22 [Guide] Dither
+2024/12/12 01:15:22 [Guide] Dither Settle
+2024/12/12 01:15:56 [Guide] Settle Done
+2024/12/12 01:15:56 Exposure 60.0s image 211#
+2024/12/12 01:16:57 Exposure 60.0s image 212#
+2024/12/12 01:17:58 [Guide] Dither
+2024/12/12 01:17:58 [Guide] Dither Settle
+2024/12/12 01:18:23 [Guide] Settle Done
+2024/12/12 01:18:23 Exposure 60.0s image 213#
+2024/12/12 01:19:24 Exposure 60.0s image 214#
+2024/12/12 01:20:25 [Guide] Dither
+2024/12/12 01:20:25 [Guide] Dither Settle
+2024/12/12 01:20:47 [Guide] Settle Done
+2024/12/12 01:20:47 Exposure 60.0s image 215#
+2024/12/12 01:21:48 Exposure 60.0s image 216#
+2024/12/12 01:22:49 [Guide] Dither
+2024/12/12 01:22:49 [Guide] Dither Settle
+2024/12/12 01:23:08 [Guide] Settle Done
+2024/12/12 01:23:08 Exposure 60.0s image 217#
+2024/12/12 01:24:09 Exposure 60.0s image 218#
+2024/12/12 01:25:10 [Guide] Dither
+2024/12/12 01:25:10 [Guide] Dither Settle
+2024/12/12 01:25:35 [Guide] Settle Done
+2024/12/12 01:25:35 Exposure 60.0s image 219#
+2024/12/12 01:26:36 Exposure 60.0s image 220#
+2024/12/12 01:27:37 [Guide] Dither
+2024/12/12 01:27:37 [Guide] Dither Settle
+2024/12/12 01:27:59 [Guide] Settle Done
+2024/12/12 01:27:59 Exposure 60.0s image 221#
+2024/12/12 01:29:00 Exposure 60.0s image 222#
+2024/12/12 01:30:01 [Guide] Dither
+2024/12/12 01:30:01 [Guide] Dither Settle
+2024/12/12 01:30:20 [Guide] Settle Done
+2024/12/12 01:30:20 Exposure 60.0s image 223#
+2024/12/12 01:31:21 Exposure 60.0s image 224#
+2024/12/12 01:32:22 [Guide] Dither
+2024/12/12 01:32:22 [Guide] Dither Settle
+2024/12/12 01:32:50 [Guide] Settle Done
+2024/12/12 01:32:50 Exposure 60.0s image 225#
+2024/12/12 01:33:51 Exposure 60.0s image 226#
+2024/12/12 01:34:52 [Guide] Dither
+2024/12/12 01:34:52 [Guide] Dither Settle
+2024/12/12 01:35:02 [Guide] Settle Done
+2024/12/12 01:35:02 Exposure 60.0s image 227#
+2024/12/12 01:36:03 Exposure 60.0s image 228#
+2024/12/12 01:37:04 [Guide] Dither
+2024/12/12 01:37:04 [Guide] Dither Settle
+2024/12/12 01:37:38 [Guide] Settle Done
+2024/12/12 01:37:38 Exposure 60.0s image 229#
+2024/12/12 01:38:39 Exposure 60.0s image 230#
+2024/12/12 01:39:40 [Guide] Dither
+2024/12/12 01:39:40 [Guide] Dither Settle
+2024/12/12 01:39:50 [Guide] Settle Done
+2024/12/12 01:39:50 Exposure 60.0s image 231#
+2024/12/12 01:40:51 Exposure 60.0s image 232#
+2024/12/12 01:41:52 [Guide] Dither
+2024/12/12 01:41:52 [Guide] Dither Settle
+2024/12/12 01:42:02 [Guide] Settle Done
+2024/12/12 01:42:02 Exposure 60.0s image 233#
+2024/12/12 01:43:03 Exposure 60.0s image 234#
+2024/12/12 01:44:04 [Guide] Dither
+2024/12/12 01:44:04 [Guide] Dither Settle
+2024/12/12 01:44:29 [Guide] Settle Done
+2024/12/12 01:44:29 Exposure 60.0s image 235#
+2024/12/12 01:45:30 Exposure 60.0s image 236#
+2024/12/12 01:46:31 [Guide] Dither
+2024/12/12 01:46:31 [Guide] Dither Settle
+2024/12/12 01:47:02 [Guide] Settle Done
+2024/12/12 01:47:02 Exposure 60.0s image 237#
+2024/12/12 01:48:03 Exposure 60.0s image 238#
+2024/12/12 01:49:04 [Guide] Dither
+2024/12/12 01:49:04 [Guide] Dither Settle
+2024/12/12 01:49:20 [Guide] Settle Done
+2024/12/12 01:49:20 Exposure 60.0s image 239#
+2024/12/12 01:50:21 Exposure 60.0s image 240#
+2024/12/12 01:51:22 [Guide] Dither
+2024/12/12 01:51:22 [Guide] Dither Settle
+2024/12/12 01:51:49 [Guide] Settle Done
+2024/12/12 01:51:50 Exposure 60.0s image 241#
+2024/12/12 01:52:51 Exposure 60.0s image 242#
+2024/12/12 01:53:52 [Guide] Dither
+2024/12/12 01:53:52 [Guide] Dither Settle
+2024/12/12 01:54:02 [Guide] Settle Done
+2024/12/12 01:54:02 Exposure 60.0s image 243#
+2024/12/12 01:55:03 Exposure 60.0s image 244#
+2024/12/12 01:56:04 [Guide] Dither
+2024/12/12 01:56:04 [Guide] Dither Settle
+2024/12/12 01:56:13 [Guide] Settle Done
+2024/12/12 01:56:14 Exposure 60.0s image 245#
+2024/12/12 01:57:15 Exposure 60.0s image 246#
+2024/12/12 01:58:16 [Guide] Dither
+2024/12/12 01:58:16 [Guide] Dither Settle
+2024/12/12 01:58:40 [Guide] Settle Done
+2024/12/12 01:58:41 Exposure 60.0s image 247#
+2024/12/12 01:59:42 Exposure 60.0s image 248#
+2024/12/12 02:00:43 [Guide] Dither
+2024/12/12 02:00:43 [Guide] Dither Settle
+2024/12/12 02:01:13 [Guide] Settle Done
+2024/12/12 02:01:14 Exposure 60.0s image 249#
+2024/12/12 02:02:15 Exposure 60.0s image 250#
+2024/12/12 02:03:16 [Guide] Dither
+2024/12/12 02:03:16 [Guide] Dither Settle
+2024/12/12 02:03:34 [Guide] Settle Done
+2024/12/12 02:03:35 Exposure 60.0s image 251#
+2024/12/12 02:04:36 Exposure 60.0s image 252#
+2024/12/12 02:05:37 [Guide] Dither
+2024/12/12 02:05:37 [Guide] Dither Settle
+2024/12/12 02:05:46 [Guide] Settle Done
+2024/12/12 02:05:47 Exposure 60.0s image 253#
+2024/12/12 02:06:48 Exposure 60.0s image 254#
+2024/12/12 02:07:49 [Guide] Dither
+2024/12/12 02:07:49 [Guide] Dither Settle
+2024/12/12 02:08:13 [Guide] Settle Done
+2024/12/12 02:08:14 Exposure 60.0s image 255#
+2024/12/12 02:09:15 Exposure 60.0s image 256#
+2024/12/12 02:10:16 [Guide] Dither
+2024/12/12 02:10:16 [Guide] Dither Settle
+2024/12/12 02:10:25 [Guide] Settle Done
+2024/12/12 02:10:26 Exposure 60.0s image 257#
+2024/12/12 02:11:27 Exposure 60.0s image 258#
+2024/12/12 02:12:28 [Guide] Dither
+2024/12/12 02:12:28 [Guide] Dither Settle
+2024/12/12 02:12:49 [Guide] Settle Done
+2024/12/12 02:12:50 Exposure 60.0s image 259#
+2024/12/12 02:13:51 Exposure 60.0s image 260#
+2024/12/12 02:14:52 [Guide] Dither
+2024/12/12 02:14:52 [Guide] Dither Settle
+2024/12/12 02:15:16 [Guide] Settle Done
+2024/12/12 02:15:17 Exposure 60.0s image 261#
+2024/12/12 02:16:18 Exposure 60.0s image 262#
+2024/12/12 02:17:19 [Guide] Dither
+2024/12/12 02:17:19 [Guide] Dither Settle
+2024/12/12 02:17:46 [Guide] Settle Done
+2024/12/12 02:17:47 Exposure 60.0s image 263#
+2024/12/12 02:18:48 Exposure 60.0s image 264#
+2024/12/12 02:19:49 [Guide] Dither
+2024/12/12 02:19:49 [Guide] Dither Settle
+2024/12/12 02:20:13 [Guide] Settle Done
+2024/12/12 02:20:13 Exposure 60.0s image 265#
+2024/12/12 02:21:15 Exposure 60.0s image 266#
+2024/12/12 02:22:16 [Guide] Dither
+2024/12/12 02:22:16 [Guide] Dither Settle
+2024/12/12 02:22:40 [Guide] Settle Done
+2024/12/12 02:22:40 Exposure 60.0s image 267#
+2024/12/12 02:23:41 Exposure 60.0s image 268#
+2024/12/12 02:24:42 [Guide] Dither
+2024/12/12 02:24:42 [Guide] Dither Settle
+2024/12/12 02:25:13 [Guide] Settle Done
+2024/12/12 02:25:13 Exposure 60.0s image 269#
+2024/12/12 02:26:15 Exposure 60.0s image 270#
+2024/12/12 02:27:16 [Guide] Dither
+2024/12/12 02:27:16 [Guide] Dither Settle
+2024/12/12 02:27:46 [Guide] Settle Done
+2024/12/12 02:27:46 Exposure 60.0s image 271#
+2024/12/12 02:28:48 Exposure 60.0s image 272#
+2024/12/12 02:29:49 [Guide] Dither
+2024/12/12 02:29:49 [Guide] Dither Settle
+2024/12/12 02:30:07 [Guide] Settle Done
+2024/12/12 02:30:07 Exposure 60.0s image 273#
+2024/12/12 02:31:08 Exposure 60.0s image 274#
+2024/12/12 02:32:10 [Guide] Dither
+2024/12/12 02:32:10 [Guide] Dither Settle
+2024/12/12 02:32:19 [Guide] Settle Done
+2024/12/12 02:32:19 Exposure 60.0s image 275#
+2024/12/12 02:33:21 Exposure 60.0s image 276#
+2024/12/12 02:34:22 [Guide] Dither
+2024/12/12 02:34:22 [Guide] Dither Settle
+2024/12/12 02:34:37 [Guide] Settle Done
+2024/12/12 02:34:37 Exposure 60.0s image 277#
+2024/12/12 02:35:38 Exposure 60.0s image 278#
+2024/12/12 02:36:39 [Guide] Dither
+2024/12/12 02:36:39 [Guide] Dither Settle
+2024/12/12 02:37:04 [Guide] Settle Done
+2024/12/12 02:37:04 Exposure 60.0s image 279#
+2024/12/12 02:38:05 Exposure 60.0s image 280#
+2024/12/12 02:39:06 [Guide] Dither
+2024/12/12 02:39:06 [Guide] Dither Settle
+2024/12/12 02:39:31 [Guide] Settle Done
+2024/12/12 02:39:31 Exposure 60.0s image 281#
+2024/12/12 02:40:32 Exposure 60.0s image 282#
+2024/12/12 02:41:33 [Guide] Dither
+2024/12/12 02:41:33 [Guide] Dither Settle
+2024/12/12 02:41:58 [Guide] Settle Done
+2024/12/12 02:41:58 Exposure 60.0s image 283#
+2024/12/12 02:42:59 Exposure 60.0s image 284#
+2024/12/12 02:44:00 [Guide] Dither
+2024/12/12 02:44:00 [Guide] Dither Settle
+2024/12/12 02:44:19 [Guide] Settle Done
+2024/12/12 02:44:19 Exposure 60.0s image 285#
+2024/12/12 02:45:20 Exposure 60.0s image 286#
+2024/12/12 02:46:21 [Guide] Dither
+2024/12/12 02:46:21 [Guide] Dither Settle
+2024/12/12 02:46:40 [Guide] Settle Done
+2024/12/12 02:46:40 Exposure 60.0s image 287#
+2024/12/12 02:47:41 Exposure 60.0s image 288#
+2024/12/12 02:48:43 [Guide] Dither
+2024/12/12 02:48:43 [Guide] Dither Settle
+2024/12/12 02:49:13 [Guide] Settle Done
+2024/12/12 02:49:13 Exposure 60.0s image 289#
+2024/12/12 02:50:14 Exposure 60.0s image 290#
+2024/12/12 02:51:16 [Guide] Dither
+2024/12/12 02:51:16 [Guide] Dither Settle
+2024/12/12 02:51:40 [Guide] Settle Done
+2024/12/12 02:51:40 Exposure 60.0s image 291#
+2024/12/12 02:52:41 Exposure 60.0s image 292#
+2024/12/12 02:53:42 [Guide] Dither
+2024/12/12 02:53:42 [Guide] Dither Settle
+2024/12/12 02:54:07 [Guide] Settle Done
+2024/12/12 02:54:07 Exposure 60.0s image 293#
+2024/12/12 02:55:08 Exposure 60.0s image 294#
+2024/12/12 02:56:09 [Guide] Dither
+2024/12/12 02:56:09 [Guide] Dither Settle
+2024/12/12 02:56:37 [Guide] Settle Done
+2024/12/12 02:56:37 Exposure 60.0s image 295#
+2024/12/12 02:57:38 Exposure 60.0s image 296#
+2024/12/12 02:58:39 [Guide] Dither
+2024/12/12 02:58:39 [Guide] Dither Settle
+2024/12/12 02:59:10 [Guide] Settle Done
+2024/12/12 02:59:10 Exposure 60.0s image 297#
+2024/12/12 03:00:11 Exposure 60.0s image 298#
+2024/12/12 03:01:12 [Guide] Dither
+2024/12/12 03:01:12 [Guide] Dither Settle
+2024/12/12 03:01:37 [Guide] Settle Done
+2024/12/12 03:01:37 Exposure 60.0s image 299#
+2024/12/12 03:02:38 Exposure 60.0s image 300#
+2024/12/12 03:03:39 [Guide] Dither
+2024/12/12 03:03:39 [Guide] Dither Settle
+2024/12/12 03:03:49 [Guide] Settle Done
+2024/12/12 03:03:49 Exposure 60.0s image 301#
+2024/12/12 03:04:50 Exposure 60.0s image 302#
+2024/12/12 03:05:51 [Guide] Dither
+2024/12/12 03:05:51 [Guide] Dither Settle
+2024/12/12 03:06:19 [Guide] Settle Done
+2024/12/12 03:06:19 Exposure 60.0s image 303#
+2024/12/12 03:07:20 Exposure 60.0s image 304#
+2024/12/12 03:08:21 [Guide] Dither
+2024/12/12 03:08:21 [Guide] Dither Settle
+2024/12/12 03:08:52 [Guide] Settle Done
+2024/12/12 03:08:52 Exposure 60.0s image 305#
+2024/12/12 03:09:53 Exposure 60.0s image 306#
+2024/12/12 03:10:54 [Guide] Dither
+2024/12/12 03:10:54 [Guide] Dither Settle
+2024/12/12 03:11:07 [Guide] Settle Done
+2024/12/12 03:11:07 Exposure 60.0s image 307#
+2024/12/12 03:12:08 Exposure 60.0s image 308#
+2024/12/12 03:13:09 [Guide] Dither
+2024/12/12 03:13:09 [Guide] Dither Settle
+2024/12/12 03:13:34 [Guide] Settle Done
+2024/12/12 03:13:34 Exposure 60.0s image 309#
+2024/12/12 03:14:35 Exposure 60.0s image 310#
+2024/12/12 03:15:36 [Guide] Dither
+2024/12/12 03:15:36 [Guide] Dither Settle
+2024/12/12 03:15:46 [Guide] Settle Done
+2024/12/12 03:15:46 Exposure 60.0s image 311#
+2024/12/12 03:16:47 Exposure 60.0s image 312#
+2024/12/12 03:17:48 [Guide] Dither
+2024/12/12 03:17:48 [Guide] Dither Settle
+2024/12/12 03:18:16 [Guide] Settle Done
+2024/12/12 03:18:16 Exposure 60.0s image 313#
+2024/12/12 03:19:17 Exposure 60.0s image 314#
+2024/12/12 03:20:18 [Guide] Dither
+2024/12/12 03:20:18 [Guide] Dither Settle
+2024/12/12 03:20:31 [Guide] Settle Done
+2024/12/12 03:20:31 Exposure 60.0s image 315#
+2024/12/12 03:21:32 Exposure 60.0s image 316#
+2024/12/12 03:22:33 [Guide] Dither
+2024/12/12 03:22:33 [Guide] Dither Settle
+2024/12/12 03:22:52 [Guide] Settle Done
+2024/12/12 03:22:52 Exposure 60.0s image 317#
+2024/12/12 03:23:53 Exposure 60.0s image 318#
+2024/12/12 03:24:54 [Guide] Dither
+2024/12/12 03:24:54 [Guide] Dither Settle
+2024/12/12 03:25:25 [Guide] Settle Done
+2024/12/12 03:25:25 Exposure 60.0s image 319#
+2024/12/12 03:26:26 Exposure 60.0s image 320#
+2024/12/12 03:27:27 [Guide] Dither
+2024/12/12 03:27:27 [Guide] Dither Settle
+2024/12/12 03:27:37 [Guide] Settle Done
+2024/12/12 03:27:37 Exposure 60.0s image 321#
+2024/12/12 03:28:38 Exposure 60.0s image 322#
+2024/12/12 03:29:39 [Guide] Dither
+2024/12/12 03:29:39 [Guide] Dither Settle
+2024/12/12 03:30:01 [Guide] Settle Done
+2024/12/12 03:30:01 Exposure 60.0s image 323#
+2024/12/12 03:31:02 Exposure 60.0s image 324#
+2024/12/12 03:32:03 [Guide] Dither
+2024/12/12 03:32:03 [Guide] Dither Settle
+2024/12/12 03:32:31 [Guide] Settle Done
+2024/12/12 03:32:31 Exposure 60.0s image 325#
+2024/12/12 03:33:32 Exposure 60.0s image 326#
+2024/12/12 03:34:33 [Guide] Dither
+2024/12/12 03:34:33 [Guide] Dither Settle
+2024/12/12 03:34:58 [Guide] Settle Done
+2024/12/12 03:34:58 Exposure 60.0s image 327#
+2024/12/12 03:35:59 Exposure 60.0s image 328#
+2024/12/12 03:37:00 [Guide] Dither
+2024/12/12 03:37:00 [Guide] Dither Settle
+2024/12/12 03:37:19 [Guide] Settle Done
+2024/12/12 03:37:19 Exposure 60.0s image 329#
+2024/12/12 03:38:20 Exposure 60.0s image 330#
+2024/12/12 03:39:21 [Guide] Dither
+2024/12/12 03:39:21 [Guide] Dither Settle
+2024/12/12 03:39:52 [Guide] Settle Done
+2024/12/12 03:39:52 Exposure 60.0s image 331#
+2024/12/12 03:40:53 Exposure 60.0s image 332#
+2024/12/12 03:41:54 [Guide] Dither
+2024/12/12 03:41:54 [Guide] Dither Settle
+2024/12/12 03:42:13 [Guide] Settle Done
+2024/12/12 03:42:13 Exposure 60.0s image 333#
+2024/12/12 03:43:14 Exposure 60.0s image 334#
+2024/12/12 03:44:15 [Guide] Dither
+2024/12/12 03:44:15 [Guide] Dither Settle
+2024/12/12 03:44:43 [Guide] Settle Done
+2024/12/12 03:44:43 Exposure 60.0s image 335#
+2024/12/12 03:45:44 Exposure 60.0s image 336#
+2024/12/12 03:46:45 [Guide] Dither
+2024/12/12 03:46:45 [Guide] Dither Settle
+2024/12/12 03:46:58 [Guide] Settle Done
+2024/12/12 03:46:58 Exposure 60.0s image 337#
+2024/12/12 03:47:59 Exposure 60.0s image 338#
+2024/12/12 03:49:00 [Guide] Dither
+2024/12/12 03:49:00 [Guide] Dither Settle
+2024/12/12 03:49:10 [Guide] Settle Done
+2024/12/12 03:49:10 Exposure 60.0s image 339#
+2024/12/12 03:50:11 Exposure 60.0s image 340#
+2024/12/12 03:51:12 [Guide] Dither
+2024/12/12 03:51:12 [Guide] Dither Settle
+2024/12/12 03:51:25 [Guide] Settle Done
+2024/12/12 03:51:25 Exposure 60.0s image 341#
+2024/12/12 03:52:26 Exposure 60.0s image 342#
+2024/12/12 03:53:27 [Guide] Dither
+2024/12/12 03:53:27 [Guide] Dither Settle
+2024/12/12 03:54:01 [Guide] Settle Done
+2024/12/12 03:54:01 Exposure 60.0s image 343#
+2024/12/12 03:55:02 Exposure 60.0s image 344#
+2024/12/12 03:56:03 [Guide] Dither
+2024/12/12 03:56:03 [Guide] Dither Settle
+2024/12/12 03:56:25 [Guide] Settle Done
+2024/12/12 03:56:25 Exposure 60.0s image 345#
+2024/12/12 03:57:26 Exposure 60.0s image 346#
+2024/12/12 03:58:27 [Guide] Dither
+2024/12/12 03:58:27 [Guide] Dither Settle
+2024/12/12 03:58:49 [Guide] Settle Done
+2024/12/12 03:58:49 Exposure 60.0s image 347#
+2024/12/12 03:59:50 Exposure 60.0s image 348#
+2024/12/12 04:00:51 [Guide] Dither
+2024/12/12 04:00:51 [Guide] Dither Settle
+2024/12/12 04:01:22 [Guide] Settle Done
+2024/12/12 04:01:22 Exposure 60.0s image 349#
+2024/12/12 04:02:23 Exposure 60.0s image 350#
+2024/12/12 04:03:24 [Guide] Stop Guiding
+2024/12/12 04:03:24 [Autorun|End] Finish Autorun
+2024/12/12 04:03:24 Plan Horse Head Nebula Finish
+2024/12/12 04:03:24 Turn Off Cooling
+2024/12/12 04:03:24 [Guide] Stop Looping
+2024/12/12 04:03:24 Stop Tracking
+2024/12/12 04:03:51 Mount GoTo Home POS
+Log disabled at 2024/12/12 04:03:51
