@@ -25,5 +25,10 @@
   z-index: 10; /* Higher z-index to ensure it's above other content */
 }
 
+.log-time-col {
+  min-width: 10em;
+  white-space: nowrap;
+}
+
 /* Styles for .log-modal-table tbody can be added here if needed in the future */
 /* For now, we rely on Bootstrap's modal-dialog-scrollable and table-striped */

@@ -48,14 +48,14 @@ window.logMessagesButtonClick = function(element) {
               <table class="table table-striped table-sm log-modal-table">
                 <thead>
                   <tr>
-                    <th scope="col">Log Time</th>
+                    <th scope="col" class="log-time-col">Log Time</th>
                     <th scope="col">Message</th>
                   </tr>
                 </thead>
                 <tbody>
                   ${logMessages.map(log => `
                     <tr>
-                      <td>${new Date(log.time).toLocaleString()}</td>
+                      <td class="log-time-col">${new Date(log.time).toLocaleString()}</td>
                       <td>${log.message}</td>
                     </tr>
                   `).join('')}
