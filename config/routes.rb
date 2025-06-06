@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get "logs/show_log_file/:log_file_id", to: "logs#show_log_file", as: "logs_show_log_file"
   get "logs/show/:log_file_id/:log_id", to: "logs#show", as: "log_show"
   get "logs/data/:log_file_id/:log_id", to: "logs#data", as: "log_data"
+  get "logs/fetch_log_messages", to: "logs#fetch_log_messages", as: "fetch_log_messages"
   get "visualizer/index"
   get "visualizer/manage_files"
   post "visualizer/process_file_uploads"

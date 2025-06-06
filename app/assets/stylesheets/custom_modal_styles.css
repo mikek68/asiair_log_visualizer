@@ -1,0 +1,34 @@
+.log-modal-content {
+  font-size: 0.875rem;
+  padding: 0 !important; /* Remove padding to prevent gap above table */
+}
+
+.log-modal-table {
+  margin: 0 !important; /* Remove all margins from table */
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.log-modal-table thead {
+  /* This rule might become redundant or simplified if th handles all sticky properties */
+  /* For now, keeping it for structural clarity, but ensure th overrides if needed */
+  color: #fff; /* Default text color for header, th will override */
+}
+
+.log-modal-table thead th {
+  background-color: #000; /* Opaque background for each header cell */
+  color: #fff; /* White text for header cells */
+  font-size: 1rem; /* Larger font size for header cells */
+  position: sticky; /* Ensure sticky positioning is on the cell */
+  top: 0; /* Stick to the top of the scrollable container */
+  z-index: 10; /* Higher z-index to ensure it's above other content */
+}
+
+.log-time-col {
+  min-width: 10em;
+  white-space: nowrap;
+}
+
+/* Styles for .log-modal-table tbody can be added here if needed in the future */
+/* For now, we rely on Bootstrap's modal-dialog-scrollable and table-striped */

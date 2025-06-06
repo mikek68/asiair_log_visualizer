@@ -56,6 +56,32 @@ class LogsController < ApplicationController
     render json: @log_data
   end
 
+  def fetch_log_messages
+    class_name = params[:class_name]
+    id = params[:id]
+
+    supported_classes = ['Plan', 'AutoRun', 'ShootingStage', 'StageProcess']
+    unless supported_classes.include?(class_name)
+      render json: { error: "Invalid class name" }, status: :bad_request
+      return
+    end
+
+    parent_model = class_name.constantize
+    begin
+      parent_record = parent_model.find(id)
+    rescue ActiveRecord::RecordNotFound
+      render json: { error: "Record not found" }, status: :not_found
+      return
+    end
+
+    log_messages = LogMessage.where("#{class_name.underscore}_id": id)
+
+    order_column = LogMessage.column_names.include?('log_time') ? :log_time : :created_at
+    log_messages = log_messages.order(order_column => :asc)
+
+    render json: log_messages.map { |lm| { time: lm.send(order_column), message: lm.message } }
+  end
+
   private
 
   def log_params
