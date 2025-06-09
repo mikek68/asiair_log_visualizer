@@ -47,7 +47,7 @@ gem "rspec-rails"
 gem "simple_form"
 gem "devise", "~> 4.9"
 
-gem 'ruby-cli-tree'
+gem 'cli-tree'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem

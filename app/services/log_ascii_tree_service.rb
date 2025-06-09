@@ -21,7 +21,7 @@ class LogAsciiTreeService
       tree_data << { 'AutoRun' => build_auto_run_children(auto_run) }
     end
 
-    tree_data
+    { "Log Structure (#{@log.id})" => tree_data }
   end
 
   private
