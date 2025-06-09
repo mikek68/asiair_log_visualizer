@@ -8,8 +8,8 @@ class LogsController < ApplicationController
   end
 
   def show
-    @log = Log.find(log_params[:log_id]) # This specific log is used for the Gantt chart data path
-    tree_service = LogAsciiTreeService.new(@log_file) # Service now uses the whole LogFile
+    @log = Log.find(log_params[:log_id]) # This specific log is used for the Gantt chart data path and now for the tree service
+    tree_service = LogAsciiTreeService.new(@log) # Service reverted to use a single Log
     tree_data = tree_service.generate_tree_data # This now returns a hash like { name: "Root", children: [...] }
 
     if tree_data.present? && tree_data[:children].present?
