@@ -6,7 +6,7 @@ class LogAsciiTreeService
 
   def generate_tree_data
     {
-      name: "LogFile (ID: #{@log_file.id}, #{@log_file.file_name})", # Root node for LogFile
+      name: "Log", # Changed to static string "Log"
       children: build_log_nodes(@log_file)
     }
   end
