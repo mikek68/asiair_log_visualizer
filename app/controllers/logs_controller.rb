@@ -1,4 +1,4 @@
-require 'cli/tree'
+require 'cli-tree'
 
 class LogsController < ApplicationController
   before_action :authenticate_user!
