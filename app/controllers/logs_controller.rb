@@ -16,7 +16,12 @@ class LogsController < ApplicationController
       # TreeNode class is directly available after require 'cli-tree'
       # as the gem uses `autoload :TreeNode, 'cli/tree/node'`
       root_treenode = TreeNode.from_h(tree_data)
-      @ascii_tree = root_treenode.render
+      rendered_output = root_treenode.render
+      if rendered_output.is_a?(Array)
+        @ascii_tree = rendered_output.join("\n")
+      else
+        @ascii_tree = rendered_output # It's already a string
+      end
     else
       @ascii_tree = "No hierarchical data to display."
     end
