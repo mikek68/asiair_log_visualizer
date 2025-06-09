@@ -1,3 +1,5 @@
+require 'ruby-cli-tree'
+
 class LogsController < ApplicationController
   before_action :authenticate_user!
   before_action :set_log_file, only: [:show_log_file, :show]
@@ -7,6 +9,9 @@ class LogsController < ApplicationController
 
   def show
     @log = Log.find(log_params[:log_id])
+    tree_service = LogAsciiTreeService.new(@log)
+    tree_data = tree_service.generate_tree_data
+    @ascii_tree = tree_data.present? ? RubyCli::Tree.generate(tree_data) : "No hierarchical data to display."
     # @log_data = LogSerializer.new(@log).serializable_hash.with_indifferent_access
   end
 
