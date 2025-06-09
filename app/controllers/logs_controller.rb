@@ -8,8 +8,9 @@ class LogsController < ApplicationController
   end
 
   def show
-    @log = Log.find(log_params[:log_id]) # This specific log is used for the Gantt chart data path and now for the tree service
-    tree_service = LogAsciiTreeService.new(@log) # Service reverted to use a single Log
+    @log = Log.find(log_params[:log_id]) # This specific log is used for the Gantt chart data path
+    # Service will be updated to accept log_file and logs_collection
+    tree_service = LogAsciiTreeService.new(log_file: @log_file, logs_collection: @logs)
     tree_data = tree_service.generate_tree_data # This now returns a hash like { name: "Root", children: [...] }
 
     if tree_data.present? && tree_data[:children].present?
@@ -108,6 +109,10 @@ class LogsController < ApplicationController
 
   def set_log_file
     @log_file = current_user.log_files.find(log_params[:log_file_id])
-    @logs = Log.where(user_id: current_user.id, log_file_id: @log_file.id).includes(:auto_runs, :plans, :shooting_stages)
+    # Eager load associations needed for the tree service and sort logs by log_start
+    @logs = Log.where(user_id: current_user.id, log_file_id: @log_file.id)
+                .includes(plans: { auto_runs: [{ shooting_stages: :exposure_groups }, :stage_processes] },
+                          auto_runs: [{ shooting_stages: :exposure_groups }, :stage_processes] ) # Add other needed includes
+                .order(:log_start)
   end
 end

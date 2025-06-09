@@ -1,44 +1,51 @@
 # app/services/log_ascii_tree_service.rb
 class LogAsciiTreeService
-  def initialize(log) # Changed back to log
-    @log = log    # Store @log
+  def initialize(log_file:, logs_collection:) # Changed to keyword arguments
+    @log_file = log_file
+    @logs_collection = logs_collection # Already sorted and eager-loaded by controller
   end
 
   def generate_tree_data
     {
-      # Restored name for single log, including start time for context
-      name: "Log Structure (ID: #{@log.id} Start: #{@log.log_start.try(:strftime, '%Y-%m-%d %H:%M') || 'N/A'})",
-      children: build_log_children(@log) # Call method to build children of this @log
+      name: "Log File (ID: #{@log_file.id}, File: #{@log_file.file_name})", # Root node name for LogFile
+      children: build_log_entry_nodes(@logs_collection)
     }
   end
 
   private
 
-  # This method now builds the children for the single @log
-  # It combines plans and standalone autoruns, then sorts them.
-  def build_log_children(log)
+  # New method to iterate over the collection of log entries
+  def build_log_entry_nodes(logs_collection)
     nodes = []
+    logs_collection.each do |log_entry| # Iterate over the passed collection
+      nodes << {
+        name: "Log (ID: #{log_entry.id} Start: #{log_entry.log_start.try(:strftime, '%Y-%m-%d %H:%M') || 'N/A'})",
+        children: build_children_for_single_log(log_entry) # Process children for this specific log entry
+      }
+    end
+    nodes
+  end
 
-    # Fetch plans and convert to node structure
-    plan_items = log.plans.order(:plan_start).to_a.map do |plan|
+  # This method processes a single log entry from the collection
+  # (Previously build_log_children, adapted to take log_entry parameter explicitly)
+  def build_children_for_single_log(log_entry)
+    nodes = []
+    plan_items = log_entry.plans.order(:plan_start).to_a.map do |plan|
       {
-        item_type: :plan, # Add type for sorting and processing
+        item_type: :plan,
         object: plan,
         sort_key: plan.plan_start || Time.at(0)
       }
     end
 
-    # Fetch standalone AutoRuns and convert to node structure
-    autorun_items = log.auto_runs.where(plan_id: nil).order(:run_start).to_a.map do |auto_run|
+    autorun_items = log_entry.auto_runs.where(plan_id: nil).order(:run_start).to_a.map do |auto_run|
       {
-        item_type: :auto_run, # Add type for sorting and processing
+        item_type: :auto_run,
         object: auto_run,
         sort_key: auto_run.run_start || Time.at(0)
       }
     end
 
-    # Merge and sort all top-level items (Plans and standalone AutoRuns)
-    # Sorting by their respective start times (plan_start for Plan, run_start for AutoRun)
     all_top_level_items = (plan_items + autorun_items).sort_by { |i| i[:sort_key] }
 
     all_top_level_items.each do |item_hash|
@@ -50,7 +57,7 @@ class LogAsciiTreeService
         }
       elsif item_hash[:item_type] == :auto_run
         nodes << {
-          name: "AutoRun (ID: #{item_object.id})", # This is a standalone AutoRun
+          name: "AutoRun (ID: #{item_object.id})", # Standalone AutoRun
           children: build_auto_run_children_nodes(item_object)
         }
       end
@@ -60,7 +67,6 @@ class LogAsciiTreeService
 
   def build_plan_children_nodes(plan)
     child_nodes = []
-    # AutoRuns under a plan are already sorted by their own run_start
     sorted_auto_runs = plan.auto_runs.order(:run_start)
     sorted_auto_runs.each do |auto_run|
       child_nodes << {
@@ -105,7 +111,6 @@ class LogAsciiTreeService
   def build_shooting_stage_children_nodes(shooting_stage)
     child_nodes = []
     exposure_groups = shooting_stage.exposure_groups.to_a.map do |eg|
-      # Assuming ExposureGroup has run_start; if not, use created_at or a default
       { type: :exposure_group, object: eg, sort_key: eg.run_start || Time.at(0) }
     end
 
@@ -148,12 +153,11 @@ class LogAsciiTreeService
                        StageProcess.where(parent_stage_process_id: parent_stage_process.id)
                      end
 
-    # Sorting applied here
     sorted_child_processes = children_query.respond_to?(:order) ? children_query.order(:run_start) : children_query.sort_by { |cp| cp.run_start || Time.at(0) }
 
     sorted_child_processes.each do |child_process|
       next if child_process.type == "Guide"
-      unless child_process.is_a?(StageProcess) # Should be redundant if query is specific
+      unless child_process.is_a?(StageProcess)
         next
       end
       child_nodes << {
