@@ -4,7 +4,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     gantt.templates.tooltip_text = function(start, end, task) {
-        return task.tool_tip_text;
+        var tooltip = task.tool_tip_text || ""; // Start with existing tooltip text or an empty string
+        if (task.start_date) {
+            tooltip += "<br/>Start Time: " + task.start_date;
+        }
+        if (task.end_date) {
+            tooltip += "<br/>End Time: " + task.end_date;
+        }
+        return tooltip;
     };
 
     gantt.config.scales = [
@@ -15,8 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     gantt.config.columns = [
         { name: "text", label: "Task name", width: 250, resize: false, tree: true },
-        { name: "start_date", label: "Start Time", align: "center", resize: false, width: 160 },
-        { name: "end_date", label: "End Time", align: "center", resize: false, width: 160 },
         { name: "log_messages", label: "Log Messages", align: "center", resize: false, width: 140 },
     ];
 
