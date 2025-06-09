@@ -58,8 +58,9 @@ class LogAsciiTreeService
       }
     end
     auto_run.stage_processes.each do |stage_process|
+      next if stage_process.type == "Guide" # Skip if type is "Guide"
       child_nodes << {
-        name: "StageProcess (ID: #{stage_process.id})", # Example: Include ID
+        name: "#{stage_process.type} (ID: #{stage_process.id})", # Use stage_process.type
         children: build_stage_process_children_nodes(stage_process)
       }
     end
@@ -91,8 +92,9 @@ class LogAsciiTreeService
                            end
 
     children_association.each do |child_process|
+      next if child_process.type == "Guide" # Skip if type is "Guide"
       child_nodes << {
-        name: "StageProcess (ID: #{child_process.id})", # Example: Include ID
+        name: "#{child_process.type} (ID: #{child_process.id})", # Use child_process.type
         children: build_stage_process_children_nodes(child_process) # Recursive call
       }
     end
