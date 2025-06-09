@@ -10,8 +10,16 @@ class LogsController < ApplicationController
   def show
     @log = Log.find(log_params[:log_id])
     tree_service = LogAsciiTreeService.new(@log)
-    tree_data = tree_service.generate_tree_data # This now returns a hash like { "Root" => [...] }
-    @ascii_tree = tree_data.present? && tree_data.values.first.present? ? CLI::Tree.new(tree_data).to_s : "No hierarchical data to display."
+    tree_data = tree_service.generate_tree_data # This now returns a hash like { name: "Root", children: [...] }
+
+    if tree_data.present? && tree_data[:children].present?
+      # TreeNode class is directly available after require 'cli-tree'
+      # as the gem uses `autoload :TreeNode, 'cli/tree/node'`
+      root_treenode = TreeNode.from_h(tree_data)
+      @ascii_tree = root_treenode.render
+    else
+      @ascii_tree = "No hierarchical data to display."
+    end
     # @log_data = LogSerializer.new(@log).serializable_hash.with_indifferent_access
   end
 

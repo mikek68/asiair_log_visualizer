@@ -5,74 +5,97 @@ class LogAsciiTreeService
   end
 
   def generate_tree_data
-    tree_data = []
-
-    # Process Plans associated with the Log
-    @log.plans.each do |plan|
-      tree_data << { 'Plan' => build_plan_children(plan) }
-    end
-
-    # Process AutoRuns not associated with any Plan (direct children of Log)
-    # Assuming AutoRun has a direct association with Log if not with Plan,
-    # or a method like `auto_runs_without_plan` exists on the Log model.
-    # If `auto_runs.without_plan` is not a direct method, this might need adjustment
-    # based on actual model relationships. For now, assuming it exists.
-    (@log.auto_runs.respond_to?(:without_plan) ? @log.auto_runs.without_plan : @log.auto_runs.where(plan_id: nil)).each do |auto_run|
-      tree_data << { 'AutoRun' => build_auto_run_children(auto_run) }
-    end
-
-    { "Log Structure (#{@log.id})" => tree_data }
+    # This method will now return a single hash formatted for CLI::Tree::Node.from_h
+    {
+      name: "Log Structure (#{@log.id})",
+      children: build_top_level_children_nodes
+    }
   end
 
   private
 
-  def build_plan_children(plan)
-    children = []
+  def build_top_level_children_nodes
+    nodes = []
+
+    # Process Plans associated with the Log
+    @log.plans.each do |plan|
+      nodes << {
+        name: "Plan (ID: #{plan.id})", # Example: Include ID for clarity
+        children: build_plan_children_nodes(plan)
+      }
+    end
+
+    # Process AutoRuns not associated with any Plan
+    # Adjust based on actual model relationships for fetching these auto_runs
+    auto_runs_without_plan = @log.auto_runs.respond_to?(:without_plan) ? @log.auto_runs.without_plan : @log.auto_runs.where(plan_id: nil)
+    auto_runs_without_plan.each do |auto_run|
+      nodes << {
+        name: "AutoRun (ID: #{auto_run.id})", # Example: Include ID
+        children: build_auto_run_children_nodes(auto_run)
+      }
+    end
+
+    nodes
+  end
+
+  def build_plan_children_nodes(plan)
+    child_nodes = []
     plan.auto_runs.each do |auto_run|
-      children << { 'AutoRun' => build_auto_run_children(auto_run) }
+      child_nodes << {
+        name: "AutoRun (ID: #{auto_run.id})", # Example: Include ID
+        children: build_auto_run_children_nodes(auto_run)
+      }
     end
-    children
+    child_nodes
   end
 
-  def build_auto_run_children(auto_run)
-    children = []
+  def build_auto_run_children_nodes(auto_run)
+    child_nodes = []
     auto_run.shooting_stages.each do |shooting_stage|
-      children << { 'ShootingStage' => build_shooting_stage_children(shooting_stage) }
+      child_nodes << {
+        name: "ShootingStage (ID: #{shooting_stage.id})", # Example: Include ID
+        children: build_shooting_stage_children_nodes(shooting_stage)
+      }
     end
-    # Assuming StageProcess can be a direct child of AutoRun
     auto_run.stage_processes.each do |stage_process|
-      children << { 'StageProcess' => build_stage_process_children(stage_process) }
+      child_nodes << {
+        name: "StageProcess (ID: #{stage_process.id})", # Example: Include ID
+        children: build_stage_process_children_nodes(stage_process)
+      }
     end
-    children
+    child_nodes
   end
 
-  def build_shooting_stage_children(shooting_stage)
-    children = []
-    # Assuming ShootingStage has_many ExposureGroups
-    # If the association is named differently, this needs to be adjusted.
+  def build_shooting_stage_children_nodes(shooting_stage)
+    child_nodes = []
     if shooting_stage.respond_to?(:exposure_groups)
       shooting_stage.exposure_groups.each do |exposure_group|
-        children << { 'ExposureGroup' => [] } # ExposureGroups are leaf nodes here
+        child_nodes << {
+          name: "ExposureGroup (ID: #{exposure_group.id})", # Example: Include ID
+          children: [] # ExposureGroups are leaf nodes
+        }
       end
     end
-    children
+    child_nodes
   end
 
-  def build_stage_process_children(stage_process)
-    children = []
-    # StageProcess can have nested StageProcesses
-    # Assuming `child_processes` or a similar association exists for nesting.
-    # If StageProcess has a `parent_id` and `children` association:
-    if stage_process.respond_to?(:child_processes) # Or :children, adjust as needed
-      stage_process.child_processes.each do |child_process|
-        children << { 'StageProcess' => build_stage_process_children(child_process) }
-      end
-    elsif stage_process.respond_to?(:children)
-        stage_process.children.each do |child_process|
-            children << { 'StageProcess' => build_stage_process_children(child_process) }
-        end
+  def build_stage_process_children_nodes(stage_process)
+    child_nodes = []
+    # Determine the correct association for child StageProcesses
+    children_association = if stage_process.respond_to?(:child_processes)
+                             stage_process.child_processes
+                           elsif stage_process.respond_to?(:children)
+                             stage_process.children
+                           else
+                             [] # No known children association
+                           end
+
+    children_association.each do |child_process|
+      child_nodes << {
+        name: "StageProcess (ID: #{child_process.id})", # Example: Include ID
+        children: build_stage_process_children_nodes(child_process) # Recursive call
+      }
     end
-    # Add other potential children of StageProcess if any (e.g., specific log entries or other models)
-    children
+    child_nodes
   end
 end
